@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    background: url("images/bg.jpeg") center no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+            font-size: 10rem;
+            animation: heart .5s infinite alternate linear;
+        }
+
+@keyframes heart {
+    from {
+        transform: scale(.7);
+    }
+
+    to { 
+        transform: scale(1);
+    }
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.header__text {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+
+/* Main */
+
+.main {
+    padding-top: 100px;
+}
+
+.main-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-item {
+    display: block;
+    width: 33.3333%;
+}
+
+
+.item-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.item-text {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: beige;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
